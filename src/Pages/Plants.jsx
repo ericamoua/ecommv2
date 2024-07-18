@@ -7,7 +7,7 @@ function Plants (){
     const [plants, setPlants] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8080/api/plants")
+        fetch("https://plantsapi-5k4e.onrender.com/api/plants")
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
