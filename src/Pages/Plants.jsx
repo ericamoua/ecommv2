@@ -7,7 +7,7 @@ function Plants (){
     const [plants, setPlants] = useState([]);
 
     useEffect(() => {
-        fetch("https://plantsapi-5k4e.onrender.com/api/plants")
+        fetch("/api/plant")
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
@@ -21,7 +21,7 @@ function Plants (){
             <div key={plant.id}>
                 <h1>{plant.Plants}</h1>
                 <p>{plant.Price}</p>
-                <img className="plant-image" src={plant.ImageFilePath} alt={plant.Plants} />
+                <img className="plant-image" src={plant.bImageFilePath} alt={plant.Plants} />
             </div>
         ));
     }
