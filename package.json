@@ -40,6 +40,6 @@
     "react-scripts": "^5.0.1",
     "webpack-dev-server": "^5.0.4"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "https://hnubblooms.onrender.com/"
   
 }
