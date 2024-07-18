@@ -26,9 +26,6 @@ connection.connect(function (err) {
     console.log("Connected to MySQL");
 });
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, "build")));
-
 // Endpoint to fetch plants from MySQL database
 app.get('/api/plants', (req, res) => {
     const query = 'SELECT * FROM plant';
@@ -41,6 +38,7 @@ app.get('/api/plants', (req, res) => {
         res.json(results);
     });
 });
+//httpss://plantsapi-5k4e.onrender.com/
 
 // This endpoint was mimicking your database response
 // Uncomment if needed to test

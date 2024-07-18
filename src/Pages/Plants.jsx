@@ -7,13 +7,12 @@ function Plants (){
     const [plants, setPlants] = useState([]);
 
     useEffect(() => {
-        fetch("/api/plant")
+        console.log("Fetching plants...");
+        fetch("/api/plants")
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setPlants(data);
-            })
-            ;
+            });
     }, []);
 
     function renderPlants() {
@@ -21,7 +20,7 @@ function Plants (){
             <div key={plant.id}>
                 <h1>{plant.Plants}</h1>
                 <p>{plant.Price}</p>
-                <img className="plant-image" src={plant.bImageFilePath} alt={plant.Plants} />
+                <img className="plant-image" src={plant.ImageFilePath} alt={plant.Plants} />
             </div>
         ));
     }
