@@ -1,0 +1,13 @@
+.plant-image {
+    width: 50%;
+    padding-top: 20px;
+    border-radius: 5px;
+    display: block; 
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .plant-image:hover {
+    transform: scale(1.1);
+  }
+  

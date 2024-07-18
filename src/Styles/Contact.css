@@ -1,0 +1,76 @@
+.email-link {
+    color: inherit; 
+    font-weight: bold;
+    letter-spacing: 1px; 
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.email-link:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container {
+    background-color: #EEEDE7;
+    padding: 10px 10px;
+     width: 500px;
+}
+
+.formc {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.formc label {
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.formc input {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    padding: 8px;
+}
+
+
+.formc select{
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+
+.formc.error input{
+    border: 2px solid red;
+    border-color: red;
+    visibility: visible;
+}
+
+.formc p {
+    color: red;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 2px;
+}
+
+.formc.error p {
+    color: red;
+    visibility: visible; /* Ensure error message is visible */
+    margin-top: 2px;
+}
+
+.formc select{
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+}

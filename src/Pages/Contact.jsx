@@ -1,6 +1,8 @@
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import React, { useState } from 'react';
+import "../Styles/Footer.css";
+import "../Styles/Contact.css";
 
 function Contact() {
     // Initialize state for each form input and for errors
@@ -101,56 +103,60 @@ function Contact() {
 
     return (
         <>
-        <Nav/>
-        <div>
-            <h2>Contact Us!</h2>
-            <form onSubmit={handleSubmit}>
-                <label>First Name:</label>
-                <input
-                    type="text"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                />
-                {errors.firstName && <p>{errors.firstName}</p>}
-
-                <label>Last Name:</label>
-                <input
-                    type="text"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                />
-                {errors.lastName && <p>{errors.lastName}</p>}
-
-                <label>Email:</label>
-                <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                {errors.email && <p>{errors.email}</p>}
-
-                <label>Subject:</label>
-                <input
-                    type="text"
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                />
-                {errors.subject && <p>{errors.subject}</p>}
-
-                <label>Comments / Questions:</label>
-                <textarea
-                    value={comment}
-                    onChange={(e) => setComment(e.target.value)}
-                />
-                {errors.comment && <p>{errors.comment}</p>}
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <Footer/>
+            <Nav/>
+            <div className="container">
+                <h2>Contact Us!</h2>
+                <form onSubmit={handleSubmit}>
+                    <div className={`formc ${errors.firstName ? 'error' : ''}`}>
+                        <label>First Name:</label>
+                        <input
+                            type="text"
+                            value={firstName}
+                            onChange={(e) => setFirstName(e.target.value)}
+                        />
+                        {errors.firstName && <p>{errors.firstName}</p>}
+                    </div>
+                    <div className={`formc ${errors.lastName ? 'error' : ''}`}>
+                        <label>Last Name:</label>
+                        <input
+                            type="text"
+                            value={lastName}
+                            onChange={(e) => setLastName(e.target.value)}
+                        />
+                        {errors.lastName && <p>{errors.lastName}</p>}
+                    </div>
+                    <div className={`formc ${errors.email ? 'error' : ''}`}>
+                        <label>Email:</label>
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        {errors.email && <p>{errors.email}</p>}
+                    </div>
+                    <div className={`formc ${errors.subject ? 'error' : ''}`}>
+                        <label>Subject:</label>
+                        <input
+                            type="text"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
+                        />
+                        {errors.subject && <p>{errors.subject}</p>}
+                    </div>
+                    <div className={`formc ${errors.comment ? 'error' : ''}`}>
+                        <label>Comments / Questions:</label>
+                        <textarea
+                            value={comment}
+                            onChange={(e) => setComment(e.target.value)}
+                        />
+                        {errors.comment && <p>{errors.comment}</p>}
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <Footer/>
         </>
     );
 }
-
 
 export default Contact;

@@ -1,0 +1,19 @@
+.container-notfound, .contact-notfound {
+    text-align: center;
+    background: rgb(135, 183, 96);
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.container-notfound {
+    max-width: 600px;
+}
+
+.contact-notfound {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}

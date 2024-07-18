@@ -4,6 +4,8 @@ import About from "../Components/About"
 import Course from "../Components/Course";
 import Carol from '../Components/Carol';
 import Footer from '../Components/Footer';
+import "../Styles/Footer.css";
+import "../Styles/Home.css";
 
 
 function Home (){
