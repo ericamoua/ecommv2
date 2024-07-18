@@ -11,6 +11,7 @@ function Plants (){
         fetch("/api/plants")
             .then((response) => response.json())
             .then((data) => {
+                console.log(data);
                 setPlants(data);
             });
     }, []);
