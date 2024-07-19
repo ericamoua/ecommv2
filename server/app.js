@@ -42,9 +42,9 @@ app.get('/api/plants', (req, res) => {
 
 // // This endpoint was mimicking your database respo
 // // Catch-all handler to serve React app for unknown routes
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
