@@ -40,28 +40,11 @@ app.get('/api/plants', (req, res) => {
     });
 });
 
-// This endpoint was mimicking your database response
-// Uncomment if needed to test
-// const plants = [
-//     {
-//         name: "erica",
-//         price: 500,
-//         image: "../public/images/mediumSagoPalm.webp",
-//     },
-//     {
-//         name: "Laptop",
-//         price: 30,
-//         image: "../images/mediumSagoPalm.webp",
-//     },
-// ];
-// app.get("/api/mockplants", (req, res) => {
-//     res.send(plants);
+// // This endpoint was mimicking your database respo
+// // Catch-all handler to serve React app for unknown routes
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 // });
-
-// Catch-all handler to serve React app for unknown routes
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
