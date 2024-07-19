@@ -105,12 +105,17 @@ function Contact() {
         <>
             <Nav/>
             <div className="contact-container">
+                <div className="contact-image">
+                    <h1 class="contact-text">Contact Us!</h1>
+                    <p className="contact-text-small">We're here to help! Please fill out the form below and a member of our team will be in touch as soon as possible.</p>
+                </div>
                 <div className="container">
                     <h2>Contact Us!</h2>
                     <form onSubmit={handleSubmit}>
                         <div className={`formc ${errors.firstName ? 'error' : ''}`}>
                             <label>First Name:</label>
                             <input
+                                className="user-input"
                                 type="text"
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
@@ -120,6 +125,7 @@ function Contact() {
                         <div className={`formc ${errors.lastName ? 'error' : ''}`}>
                             <label>Last Name:</label>
                             <input
+                                className="user-input"
                                 type="text"
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
@@ -129,6 +135,7 @@ function Contact() {
                         <div className={`formc ${errors.email ? 'error' : ''}`}>
                             <label>Email:</label>
                             <input
+                                className="user-input"
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
@@ -138,6 +145,7 @@ function Contact() {
                         <div className={`formc ${errors.subject ? 'error' : ''}`}>
                             <label>Subject:</label>
                             <input
+                                className="user-input"
                                 type="text"
                                 value={subject}
                                 onChange={(e) => setSubject(e.target.value)}
@@ -147,12 +155,21 @@ function Contact() {
                         <div className={`formc ${errors.comment ? 'error' : ''}`}>
                             <label>Comments / Questions:</label>
                             <textarea
+                                className="text-area"
                                 value={comment}
                                 onChange={(e) => setComment(e.target.value)}
                             />
                             {errors.comment && <p>{errors.comment}</p>}
                         </div>
-                        <button type="submit">Submit</button>
+                        
+                        <button>
+                            <span class="circle1"></span>
+                            <span class="circle2"></span>
+                            <span class="circle3"></span>
+                            <span class="circle4"></span>
+                            <span class="circle5"></span>
+                            <span class="text">Submit</span>
+                        </button>
                     </form>
                 </div>
                 </div>
