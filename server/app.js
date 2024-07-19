@@ -7,9 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // Add this line to parse JSON bodies
 app.use(express.static(path.join(__dirname, 'build')));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-  });
 
 const PORT = process.env.PORT || 8080;
 
@@ -42,7 +39,6 @@ app.get('/api/plants', (req, res) => {
         res.json(results);
     });
 });
-//httpss://plantsapi-5k4e.onrender.com/
 
 // This endpoint was mimicking your database response
 // Uncomment if needed to test
