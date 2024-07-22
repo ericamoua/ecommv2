@@ -13,6 +13,11 @@
     font-weight: bold;
     letter-spacing: 5px;
     padding-top: 20px;
+    font-family: yeseva one, serif;
+}
+
+.contact-text-small {
+  font-family: "PT Serif", serif
 }
 .email-link {
     color: inherit; 

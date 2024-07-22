@@ -7,7 +7,7 @@ const Nav = () => {
             <div>
                 <nav class="navbar">
                     <div class="header-top">
-                        <img src="../images/hnubbloomsplant.png" alt="HNUB BLOOMS" class="nav-icon"></img>
+                        <img src="../images/hnubbloomssunflower.png" alt="HNUB BLOOMS" className="nav-img"></img>
                     </div>
                     <div>
                     <ul class="header-bottom">

@@ -1,93 +1,144 @@
 .plant-image {
-    width: 50%;
-    padding-top: 20px;
-    border-radius: 5px;
-    display: block; 
-    margin: 0 auto;
-    transition: transform 0.3s ease;
-  }
-  
-  .plant-image:hover {
-    transform: scale(1.1);
-  }
-  
-  .container-plant {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  #plant-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(4, auto); 
-    gap: 20px; 
-    border:none;
-    padding: 1%;
-  }
-  
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%; 
-    flex-direction: column;
-    display: flex;
-  }
-  
-  .card p {
-    font-size: 1em;
-  }
-  
-  .card h2 {
-    font-size: 2em;
-    text-align: center;
-    height: 65px;
-  }
-  
-  .plant-image {
-    width: 50%;
-    padding-top: 20px;
-    border-radius: 5px;
-    display: block; 
-    margin: 0 auto;
-    transition: transform 0.3s ease;
-  }
-  
-  .plant-image:hover {
-    transform: scale(1.1);
-  }
-  
-  .plant-price {
-    font-weight: bold;
-    color: green;
-  }
-  
-  .plant-detail {
-    font-style: italic;
-  }
-  
-  .pet-friendly {
-    color: blue;
-  }
-  
-  .card button {
-    width: 100%;
-    padding: 8px;
-    background-color: #4CAF50;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .card button:hover {
-    background-color: #addfaf; 
-  }
-  
-  .plant-info {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    height:250px;
-  }
+  width: 50%;
+  padding-top: 20px;
+  border-radius: 5px;
+  display: block; 
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  height: 300px;
+  width: 200px;
+}
+
+.plant-image:hover {
+  transform: scale(1.1);
+}
+
+.container-plant {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.plant-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(4, auto); 
+  gap: 20px; 
+  border: none;
+  padding: 1%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  height: 550px;
+}
+
+.card p {
+  font-size: 1em;
+}
+
+.card h2 {
+  text-align: center;
+  height: 65px;
+  margin: 0 0 0px;
+}
+
+.plant-price {
+  font-weight: bold;
+  color: green;
+  margin: 0px;
+  justify-content: center;
+  display : flex;
+}
+
+.plant-detail {
+  font-style: italic;
+  margin: 1 0 0 0px;
+}
+
+.pet-friendly {
+  color: blue;
+}
+
+.plant-pet-friendly  {
+  margin: 0px;
+}
+
+.buy-now {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.button-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  height: 40px;
+}
+
+.button-now .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button-now svg path {
+  transition: 400ms;
+}
+
+.button-now:hover {
+  background-color: transparent;
+}
+
+.button-now:hover .text {
+  color: #181717;
+}
+
+.button-now:hover svg path {
+  fill: #181717;
+}
+.plant-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.filter-container label {
+  margin-right: 20px;
+}
+
+.filter-container input,
+.filter-container select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.filter-container input:focus,
+.filter-container select:focus {
+  border-color: #4CAF50;
+}

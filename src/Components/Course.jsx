@@ -10,6 +10,7 @@ const Course = () => {
                     <img src="images/classPlant1.jpg" alt="plant course"/>
                     <img src="images/classPlant2.jpg" alt="plant course"/>
                     <img src="images/classPlant3.jpg" alt="plant course"/>  
+                    <img src="images/classPlant4.jpg" alt="plant course"/>
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ import Carol from '../Components/Carol';
 import Footer from '../Components/Footer';
 import "../Styles/Footer.css";
 import "../Styles/Home.css";
+import 'animate.css';
 
 
 function Home (){
