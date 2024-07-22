@@ -13,9 +13,9 @@ const About = () => {
                 </div>
 
                 <div className="address-info">
-                    <h4 className="headers">Impact</h4>
+                    <h4 className="headers-light">Impact</h4>
                     <p className="my-font">Plants are not just decorations; they are life givers and mood boosters. At HNUB BLOOMS, we believe in the transformative power of greenery. Beyond their aesthetic appeal, plants purify the air we breathe, creating healthier environments for us to thrive in. They also offer a sense of tranquility, reducing stress and enhancing overall well being. Whether you're looking to add a touch of nature to your home or office, or seeking to embark on a journey of nurturing life, our diverse selection of plants promises to enrich your space and uplift your spirits.</p>
-                    <h4 className="headers">Address</h4>
+                    <h4 className="headers-light">Address</h4>
                     <p className="my-font">Walt Disney World Resort, 1375 E Buena Vista Dr, Orlando, FL</p>
                     <p className="my-font">407-939-6000</p>
                     <p className="my-font">Email: hnubblooms@planthouse.us</p>
@@ -24,6 +24,13 @@ const About = () => {
                     Friday | 11AM - 8PM
                     Saturday | 10AM-8PM
                     Sunday | 11AM - 6PM</p>
+
+                    <button className="direction-bttn">
+      <span className="circle-bttn" aria-hidden="true">
+        <span className="icon arrow"></span>
+      </span>
+      <span className="direction-text">Get Direction</span>
+    </button>
                 </div>
             </div>
         </div>
