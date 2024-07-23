@@ -4,7 +4,25 @@
     font-style: normal;
     font-size: 20px;
   }
-  
+
+  .my-font-a{
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+  }
+
+  .my-font-a a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.my-font-a a:hover {
+    color: blue;
+}
+
   .plant-icon { 
       width: 50px;
       height: 50px;
@@ -20,6 +38,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: -20px;
   }
   
   .header-home {
@@ -85,6 +104,8 @@
     padding: 40px 50px;
     gap: 3%;
     background-color: #d2d8d2;
+    border-bottom: 1px solid #2c3e50;
+    border-top: 1px solid #2c3e50;
   }
   
   
@@ -93,11 +114,9 @@
     justify-content: space-evenly;
     margin-bottom: 50px;
     margin-top: 30px;
-    gap: 40px;
   }
   
   .course-img img {
-    width: 400px;
     height: 300px;
     border-radius: 10px;
     object-fit: cover;
@@ -116,6 +135,8 @@
   .odd{
     background-color: #d2d8d2;
     margin-bottom: 50px;
+    border-top: 1px solid #344c39;
+    border-bottom: 1px solid #344c39;
   }
   /* Overflow-x allows the user to scroll horizontally for overflow text. In this case
   overflow-x is turned into a slide show*/
@@ -212,4 +233,94 @@
         align-items: center;
         gap: 20px;
       } 
+
+      .course-img img {
+        width: 300px;
+      }
 }
+
+/* BUTTON STYLES */
+.custom-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ .custom-button.learn-more-custom {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ .custom-button.learn-more-custom .circle-custom {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+ 
+ .custom-button.learn-more-custom .circle-custom .icon.arrow-custom {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ .custom-button.learn-more-custom .circle-custom .icon.arrow-custom::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ .custom-button.learn-more-custom .button-text-custom {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ .custom-button:hover .circle-custom {
+  width: 100%;
+ }
+ 
+ .custom-button:hover .circle-custom .icon.arrow-custom {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ .custom-button:hover .button-text-custom {
+  color: #fff;
+ }
+ 
