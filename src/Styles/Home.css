@@ -115,6 +115,7 @@
   }
   .odd{
     background-color: #d2d8d2;
+    margin-bottom: 50px;
   }
   /* Overflow-x allows the user to scroll horizontally for overflow text. In this case
   overflow-x is turned into a slide show*/
@@ -189,3 +190,55 @@
     background: #282936;
     border-radius: 1.625rem;
   }
+
+  @media (max-width: 768px) {
+    .flower-vid {
+      height: 200px;
+    }
+      #plant-container {
+        grid-template-columns: 1fr;
+        padding: 20px; 
+      }
+    
+      .card {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 20px; 
+      }
+  
+      .header-home {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      
+      .about-container {
+        flex-direction: column-reverse;
+      }
+  
+      .store-image img{
+        height: 400px;
+        justify-content: center;
+        display: flex;
+      }
+  
+      .about-info {
+        padding: 20px;
+      }
+  
+      .about-info h2 {
+        margin: 5px;
+      }
+      
+      .address-info {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+      }
+  
+      .course-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      } 
+}

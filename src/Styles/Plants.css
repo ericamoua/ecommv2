@@ -79,7 +79,7 @@
   align-items: center;
   padding: 10px 15px;
   gap: 15px;
-  background-color: #181717;
+  background-color: #344c39;
   outline: 3px #181717 solid;
   outline-offset: -3px;
   border-radius: 5px;
@@ -141,4 +141,25 @@
 .filter-container input:focus,
 .filter-container select:focus {
   border-color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+  .plant-container {
+    grid-template-columns: 1fr;
+    padding: 20px; 
+  }
+
+  .card {
+    width: 80%; 
+    margin: 0 auto;
+    padding: 20px; 
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+  }
+
 }

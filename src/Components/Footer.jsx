@@ -43,7 +43,7 @@ const Footer = () => {
                     <a href="contact" className="footer-link">Contact</a>
                 </div>
             </div>  
-            <div class="split-container">
+            <div class="newsletter-form">
                 <p class="heading"> Subscribe to Our Newsletter</p>
                 <form class="form">
                 <label for="email">Email:</label>

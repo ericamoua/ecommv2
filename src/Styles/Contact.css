@@ -4,7 +4,6 @@
     height: 200px;
     background-image: url('../../public/images/plantcontact.jpg');
     background-size: cover;
-    opacity: 0.7; 
 }
 
 .contact-text {
@@ -14,10 +13,16 @@
     letter-spacing: 5px;
     padding-top: 20px;
     font-family: yeseva one, serif;
+    color: white;
 }
 
+.contact-text-large {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
 .contact-text-small {
-  font-family: "PT Serif", serif
+  font-family: "Tenor Sans", sans-serif;
 }
 .email-link {
     color: inherit; 
@@ -48,11 +53,16 @@
     width: 100%;
     background-color: #d2d8d2;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 .container {
     background-color: #d2d8d2;
     padding: 10px 10px;
-    width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .formc {
@@ -168,3 +178,28 @@ button {
     transition: 1.5s ease;
   }
     
+  @media (max-width: 768px) {
+     .formc input {
+       width: 100%;
+       padding: 0px;
+     }
+
+     .text-area {
+      width: 100%;
+     }
+
+     .container{
+      background-color: #d2d8d2;
+      padding: 10px;
+      width: auto;
+     }
+
+     .contact-text-large {
+      align-items: center;
+      text-align: center;
+     }
+
+     .contact-form {
+      width: 90%;
+    }
+  }

@@ -8,6 +8,7 @@ const Nav = () => {
                 <nav class="navbar">
                     <div class="header-top">
                         <img src="../images/hnubbloomssunflower.png" alt="HNUB BLOOMS" className="nav-img"></img>
+                        <img src="../images/shoppingcart.png" alt="Shopping Cart" className="shopping-img"></img>
                     </div>
                     <div>
                     <ul class="header-bottom">

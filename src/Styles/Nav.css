@@ -4,6 +4,7 @@
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .header-top {
     display: flex;
@@ -76,6 +77,12 @@
     color: rgba(52,76,57,1);
 }
 
+.shopping-img {
+    height: 25px;
+    position:absolute;
+    right: 5%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
@@ -88,5 +95,9 @@
     }
     .nav-toggle {
         display: flex;
+    }
+
+    .contact-text-small {
+        padding: 10px;
     }
 }

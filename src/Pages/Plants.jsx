@@ -46,7 +46,7 @@ function Plants() {
             <div className="container-plant" key={plant.id}>
                 <div className="card">
                     <h2>{plant.Plants}</h2>
-                    <p className="plant-price">{plant.Price}</p>
+                    <p className="plant-price">$ {plant.Price}.00</p>
                     <p className="plant-detail">{plant.Detail}</p>
                     <p className="plant-pet-friendly">Pet Friendly: {plant.Pet_Friendly}</p>
                     <img className="plant-image" src={plant.ImageFilePath} alt={plant.Plants} />

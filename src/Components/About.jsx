@@ -1,3 +1,4 @@
+import '../Styles/About.css';
 const About = () => {
     return (
         <div>
