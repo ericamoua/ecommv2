@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa480faa.css",
-    "main.js": "/static/js/main.33fb39c2.js",
+    "main.css": "/static/css/main.e76a44e7.css",
+    "main.js": "/static/js/main.f928cf69.js",
     "static/media/plantcontact.jpg": "/static/media/plantcontact.bcb0dd8d723ee71f6905.jpg",
     "index.html": "/index.html",
-    "main.fa480faa.css.map": "/static/css/main.fa480faa.css.map",
-    "main.33fb39c2.js.map": "/static/js/main.33fb39c2.js.map"
+    "main.e76a44e7.css.map": "/static/css/main.e76a44e7.css.map",
+    "main.f928cf69.js.map": "/static/js/main.f928cf69.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa480faa.css",
-    "static/js/main.33fb39c2.js"
+    "static/css/main.e76a44e7.css",
+    "static/js/main.f928cf69.js"
   ]
 }

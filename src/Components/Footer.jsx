@@ -43,8 +43,8 @@ const Footer = () => {
                     <a href="contact" className="footer-link">Contact</a>
                 </div>
             </div>  
-            <div class="newsletter-form">
-                <p class="heading"> Subscribe to Our Newsletter</p>
+            <div clasName="newsletter-form">
+                <p className="heading"> Subscribe to Our Newsletter</p>
                 <form class="form">
                 <label for="email">Email:</label>
                 <input required="" placeholder="Enter your email address" name="email" id="email" type="email"></input>
