@@ -3,6 +3,7 @@ import Footer from "../Components/Footer";
 import React, { useState } from 'react';
 import "../Styles/Footer.css";
 import "../Styles/Contact.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
     // Initialize state for each form input and for errors
@@ -12,6 +13,16 @@ function Contact() {
     const [subject, setSubject] = useState('');
     const [comment, setComment] = useState('');
     const [errors, setErrors] = useState({});
+
+    const [capychaIsDone, setCapychaIsDone] = useState(false);
+    const YOUR_SITE_KEY = '6LeYBRcqAAAAAICErRmaGeu6gKKyqIVZNgK3evcw';
+
+    // Function to handle Recaptcha
+    function onChange() {
+        console.log('changed')
+        setCapychaIsDone(!capychaIsDone);
+    }
+
 
     // Function to display error message
     const errorMsg = (field, msg) => {
@@ -94,7 +105,6 @@ function Contact() {
             fetch('/addQue', options)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
                     alert(data.message);
                 })
                 .catch(error => console.error(error));
@@ -161,15 +171,21 @@ function Contact() {
                             />
                             {errors.comment && <p>{errors.comment}</p>}
                         </div>
+
+                        <ReCAPTCHA
+                            sitekey= {YOUR_SITE_KEY}
+                            onChange={onChange}
+                            onExpired={onChange}
+                        />
                         
-                        <button>
+                        { capychaIsDone ? (<button>
                             <span class="circle1"></span>
                             <span class="circle2"></span>
                             <span class="circle3"></span>
                             <span class="circle4"></span>
                             <span class="circle5"></span>
                             <span class="text">Submit</span>
-                        </button>
+                        </button> ) : null }
                     </form>
                 </div>
                 </div>

@@ -15,8 +15,6 @@ function Plants() {
 
     // useEffect hook to fetch data from the server whenever the filter values change
     useEffect(() => {
-        console.log("Fetching plants...");
-        
         // Construct the query URL based on filter values
         let query = "/api/plants?";
         if (minPriceFilter) query += `minPrice=${minPriceFilter}&`;
@@ -32,7 +30,6 @@ function Plants() {
                 return response.json();
             })
             .then((data) => {
-                console.log(data);
                 setPlants(data); // Update the plants state with the fetched data
             })
             .catch((error) => {

@@ -51,7 +51,7 @@ app.get('/api/plants', (req, res) => {
 
     if (pet_friendly) {
         if (minPrice || maxPrice) query += ' AND';
-        query += ' Pet_Friendly = ?';
+        query += ` Pet_Friendly = '${pet_friendly}'`;
         queryParams.push(pet_friendly);
     }
 
