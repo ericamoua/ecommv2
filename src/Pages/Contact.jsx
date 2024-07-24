@@ -83,6 +83,34 @@ function Contact() {
         return valid;
     };
 
+    // Function to handle form submission
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (validateForm()) {
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    firstName,
+                    lastName,
+                    email,
+                    subject,
+                    comment
+                })
+            };
+
+            fetch('/addQue', options)
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                })
+                .catch(error => console.error(error));
+        }
+    };
+
     return (
         <>
             <Nav/>
@@ -93,6 +121,7 @@ function Contact() {
                 <div className="container">
                     <h2 className="contact-text-large">Where plants meet people!</h2>
                     <p className="contact-text-small">We're here to help! Please fill out the form below and a member of our team will be in touch as soon as possible.</p>
+                    <form className="contact-form" onSubmit={handleSubmit}>
                         <div className={`formc ${errors.firstName ? 'error' : ''}`}>
                             <label>First Name:</label>
                             <input
@@ -157,6 +186,7 @@ function Contact() {
                             <span class="circle5"></span>
                             <span class="text">Submit</span>
                         </button> ) : null }
+                    </form>
                 </div>
                 </div>
             <Footer/>
